@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client Onboarding Packet Generator for Freelancers | WelcomeKit</title>
+  <meta name="description" content="Free client onboarding packet generator for freelancers, consultants, agencies, and service providers. Create kickoff emails, timelines, access checklists, and client expectations in minutes.">
+  <meta property="og:title" content="WelcomeKit — Free Client Onboarding Packet Generator">
+  <meta property="og:description" content="Generate a clean client onboarding packet, kickoff email, timeline, and access checklist for your next service client.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WelcomeKit — Client Onboarding Packet Generator">
+  <meta name="twitter:description" content="A free onboarding packet generator for freelancers, consultants, agencies, and service providers.">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="./" aria-label="WelcomeKit home">WelcomeKit</a>
+      <div class="nav-links">
+        <a href="#generator">Generator</a>
+        <a href="templates/">Templates</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </nav>
+    <section class="hero-grid">
+      <div>
+        <p class="eyebrow">For freelancers, consultants, agencies, and service providers</p>
+        <h1>Generate a client onboarding packet before your next kickoff call.</h1>
+        <p class="lede">Stop rewriting the same kickoff email, chasing missing logins, and hoping clients understand the process. WelcomeKit turns a few project details into a clean welcome packet, access checklist, timeline, kickoff questions, and ready-to-send email.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#generator">Create a free onboarding packet</a>
+          <a class="button secondary" href="templates/">Preview template pack</a>
+        </div>
+      </div>
+      <aside class="proof-card" aria-label="Product benefits">
+        <span>No signup · no backend · no client data storage</span>
+        <strong>A practical onboarding system you can send to a real client today.</strong>
+        <p>Built for service businesses that need clearer expectations, faster access collection, and fewer messy project starts.</p>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section class="pain-section" aria-labelledby="pain-title">
+      <p class="eyebrow">The problem</p>
+      <h2 id="pain-title">Client onboarding gets messy when every project starts from scratch.</h2>
+      <div class="cards">
+        <article>
+          <h3>Repeated kickoff emails</h3>
+          <p>You rewrite the same welcome note, access request, and next steps every time a client says yes.</p>
+        </article>
+        <article>
+          <h3>Unclear expectations</h3>
+          <p>Clients do not always know when to give feedback, what to send, or what happens after kickoff.</p>
+        </article>
+        <article>
+          <h3>Missing assets and logins</h3>
+          <p>Projects stall because brand files, platform access, approvals, or stakeholder details arrive late.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="generator" class="builder" aria-labelledby="builder-title">
+      <div class="panel form-panel">
+        <p class="eyebrow">Free generator</p>
+        <h2 id="builder-title">Build a client onboarding packet in minutes.</h2>
+        <p class="section-copy">Fill in the basics, customize anything you need, then copy or download the generated onboarding kit. Everything runs in your browser.</p>
+        <form data-kit-form>
+          <label>Service type
+            <select id="projectType" name="projectType">
+              <option value="web">Website or landing page</option>
+              <option value="marketing">Marketing or content</option>
+              <option value="operations">Operations or automation</option>
+            </select>
+            <small data-preset-help></small>
+          </label>
+
+          <div class="two-col">
+            <label>Your business
+              <input name="businessName" value="Northstar Studio" autocomplete="organization">
+            </label>
+            <label>Your name
+              <input name="ownerName" value="Alex Morgan" autocomplete="name">
+            </label>
+          </div>
+
+          <div class="two-col">
+            <label>Client name
+              <input name="clientName" value="Acme Co." autocomplete="off">
+            </label>
+            <label>Project name
+              <input name="projectName" value="Website refresh" autocomplete="off">
+            </label>
+          </div>
+
+          <div class="three-col">
+            <label>Kickoff date
+              <input type="date" name="startDate" value="2026-05-18">
+            </label>
+            <label>Timeline days
+              <input type="number" name="timelineDays" min="5" max="90" value="15">
+            </label>
+            <label>Feedback window
+              <input type="number" name="responseWindow" min="1" max="10" value="2">
+            </label>
+          </div>
+
+          <label>Contact email
+            <input type="email" name="contactEmail" value="hello@northstar.example">
+          </label>
+
+          <label>Custom deliverables <span>(optional, comma or line separated)</span>
+            <textarea name="deliverables" rows="4" placeholder="Leave blank to use the service preset"></textarea>
+          </label>
+
+          <label>Access and assets needed <span>(optional, comma or line separated)</span>
+            <textarea name="accessItems" rows="4" placeholder="Leave blank to use the service preset"></textarea>
+          </label>
+        </form>
+      </div>
+
+      <div class="panel output-panel">
+        <div class="output-actions" aria-label="Export actions">
+          <button type="button" data-copy-markdown>Copy kit</button>
+          <button type="button" data-download>Download .md</button>
+        </div>
+        <article class="preview" data-preview></article>
+        <div class="email-card">
+          <div class="output-actions split">
+            <h3>Kickoff email</h3>
+            <button type="button" data-copy-email>Copy email</button>
+          </div>
+          <pre data-email-preview></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="templates" class="template-teaser" aria-labelledby="templates-title">
+      <div>
+        <p class="eyebrow">Future paid product</p>
+        <h2 id="templates-title">Premium onboarding templates are the likely first paid offer.</h2>
+        <p class="section-copy">The free generator is the traffic engine. If users join the waitlist, the paid pack will include deeper client onboarding kits for common service businesses.</p>
+      </div>
+      <div class="mini-list" aria-label="Template pack previews">
+        <a href="templates/#marketing-consultant">Marketing consultant onboarding kit</a>
+        <a href="templates/#web-design">Web design project onboarding kit</a>
+        <a href="templates/#seo-project">SEO project onboarding kit</a>
+        <a href="templates/#copywriting">Freelance copywriting onboarding kit</a>
+        <a href="templates/#virtual-assistant">Virtual assistant onboarding kit</a>
+        <a href="templates/#social-media">Social media management onboarding kit</a>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing" aria-labelledby="pricing-title">
+      <p class="eyebrow">Revenue experiment</p>
+      <h2 id="pricing-title">Free now. Paid template pack if the waitlist proves demand.</h2>
+      <div class="cards">
+        <article>
+          <h3>Free generator</h3>
+          <p>Create a client onboarding packet, project timeline, access checklist, kickoff questions, and email without an account.</p>
+        </article>
+        <article>
+          <h3>Paid pack placeholder</h3>
+          <p>Proposed $9–$19 download: advanced onboarding packets, reminder emails, client portal copy, SOPs, and reusable checklists.</p>
+        </article>
+        <article>
+          <h3>Coming soon</h3>
+          <p>No payments are connected yet. Join the waitlist if you want the paid pack and want to shape what goes inside.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="waitlist" class="waitlist" aria-labelledby="waitlist-title">
+      <div>
+        <p class="eyebrow">Join the waitlist</p>
+        <h2 id="waitlist-title">Want the premium onboarding template pack?</h2>
+        <p class="section-copy">Leave an email locally in this static placeholder flow for now. Before launch, connect this form to Formspree, Buttondown, Beehiiv, ConvertKit, or another simple email provider.</p>
+      </div>
+      <form class="waitlist-form" data-waitlist-form action="#" method="post">
+        <label>Email address
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>What best describes you?
+          <select name="role">
+            <option>Freelancer</option>
+            <option>Consultant</option>
+            <option>Agency owner</option>
+            <option>Service provider</option>
+          </select>
+        </label>
+        <button type="submit">Join the waitlist</button>
+        <p class="form-note" data-waitlist-message>This placeholder does not store your email yet.</p>
+      </form>
+    </section>
+
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <p class="eyebrow">Client onboarding FAQ</p>
+      <h2 id="faq-title">Questions freelancers ask before sending an onboarding packet.</h2>
+      <div class="faq-grid">
+        <details>
+          <summary>What is a client onboarding packet?</summary>
+          <p>It is a short document that tells a new client what happens next, what assets or logins are needed, how feedback works, and who owns each step.</p>
+        </details>
+        <details>
+          <summary>Who is WelcomeKit for?</summary>
+          <p>It is for freelancers, consultants, agencies, and service providers who sell project-based or retainer services and want cleaner client starts.</p>
+        </details>
+        <details>
+          <summary>Does WelcomeKit store client information?</summary>
+          <p>No. The generator runs in the browser and does not send form data to a backend.</p>
+        </details>
+        <details>
+          <summary>Can I use this with real clients?</summary>
+          <p>Yes, but review and edit the generated text so it matches your process, tone, scope, and client relationship.</p>
+        </details>
+        <details>
+          <summary>Is this a legal contract?</summary>
+          <p>No. WelcomeKit creates operational templates only. It is not legal, financial, tax, medical, or professional advice.</p>
+        </details>
+        <details>
+          <summary>What will be in the paid template pack?</summary>
+          <p>The planned pack includes niche onboarding kits, client reminder emails, access request templates, feedback scripts, SOPs, and client portal copy.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>WelcomeKit</strong>
+      <p>Free client onboarding packet generator for freelancers, consultants, agencies, and service providers.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="#generator">Generator</a>
+      <a href="templates/">Templates</a>
+      <a href="#waitlist">Waitlist</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <p class="fine-print">Privacy: generated text stays in your browser. The waitlist form is a static placeholder until you connect an email provider. Disclaimer: templates are operational examples, not legal, financial, tax, medical, or professional advice.</p>
+  </footer>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
